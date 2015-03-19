@@ -1,0 +1,11 @@
+{
+  "name": "ImplicitFlowTutorial",
+  "version": "1.0.0",
+  "description": "1. `npm install connect serve-static` 2. `node server.js`",
+  "main": "server.js",
+  "dependencies": {
+    "connect": "^3.3.4",
+    "serve-static": "^1.9.2"
+  },
+  "devDependencies": {}
+}

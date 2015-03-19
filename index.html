@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Implicit Flow Demo</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="scripts/login.js"></script>
+    <script src="scripts/access_token.js"></script>
+    <script src="scripts/post_ajax.js"></script>
+    <script src="scripts/get_ajax.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/view.min.css">
+</head>
+<body>
+    <div class="form-signin">
+        <hr><strong>Step 1 - Login</strong><hr>
+        <form id="loginForm" action="login" method="POST" _lpchecked="1">
+            <button class="btn btn-lg btn-warning btn-block signin-btn" onclick="myFunction()">Use my service!</button>
+            <br/>
+            <div class="form-group">Your Access Token:
+                <div class="form-control" id="token"></div>
+            </div>
+        </form>
+
+        <br/><br/>
+        <hr><strong>Step 2 - POST a new Product</strong><hr>
+        <textarea id="post" cols="65%" rows="2.5%" style="color:#000011">{"name": "Smartphone Zony Yperia X2","url": "www.ystore.com/products/xpz2","description": "The worlds best camera and camcorder in a waterproof smartphone.","inStock": "true"}</textarea><br/>
+        <button id="one_post" class="btn-warning signin-btn">POST</button><br/><br/>
+    </div>
+
+    <center>
+        <div style="color: #f8f8ff"><strong>Response:</strong></div>
+        <textarea id="get_response" cols="85%" rows="5%" style="color:#000011" disabled="false"></textarea>
+    </center>
+</body>
+</html>
