@@ -13,7 +13,7 @@
 $(document).ready(function(){
     $("#two_get").click(function(){
         jQuery.ajax( {
-            url: 'https://api.yaas.io/product/v3/tutorialinjs/products',
+            url: 'https://api.yaas.io/hybris/category/b1/<projectid>/categories',
             type: 'GET',
             dataType: "html",
             beforeSend : function( xhr ) {
