@@ -9,12 +9,20 @@
  * Information and shall use it only in accordance with the terms of the
  * license agreement you entered into with hybris.
  */
- 
+
 window.onload = function token() {
-        var x = window.location.toString();
-        var array = [];
-        array[0] = 0;
-        array[1] = x.split("=");
-        var access_token = array[1][1].substring(0, array[1][1].indexOf('&'));
-        document.getElementById("token").innerHTML = access_token;
+   var QueryString = function() {
+   var query_string = {};
+   var query = window.location.href;
+   var vars = query.split("&");
+   for (var i = 0; i < 1; i++) {
+      var pair = vars[i].split("=");
+         if (typeof query_string[pair[0]] === "undefined") {
+            query_string[pair[0]] = decodeURIComponent(pair[1]);
+            access_token = query_string[pair[0]];
+            document.getElementById("token").innerHTML = access_token;
+    }
+ }
+ return query_string;
+}();
 }
