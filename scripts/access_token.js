@@ -10,7 +10,7 @@
  * license agreement you entered into with hybris.
  */
 
-window.onload = function token() {
+ window.onload = function token() {
    var QueryString = function() {
    var query_string = {};
    var query = window.location.href;
@@ -25,4 +25,10 @@ window.onload = function token() {
  }
  return query_string;
 }();
+        var location = window.location.toString();
+        var accessTokenRegExp = /access_token=([^'"&]+)/;
+        var match = accessTokenRegExp.exec(location);
+        var access_token = match[1];
+        document.getElementById("token").innerHTML = access_token
+        return access_token;
 }
