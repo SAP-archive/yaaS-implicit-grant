@@ -13,7 +13,7 @@ This project is copyrighted by [SAP AG](http://www.sap.com/) and made available 
 In order to use the sample tutorial you need to have an account in the Builder and be able to create applications within a project/site.
 
 ## Getting started
-1. Create a new project in the Builder. Go to: Projects > NAME_OF_YOUR_PROJECT > Administration. In the file `scripts/login.js` set **projectid** (Identifier). Change **Redirect URL** to `http://localhost:8080`. Go to Administration -> Applications. Create an application, retrieve the  **Client ID** and:
+1. Create a new project in the Builder. Go to: Projects/Sites > NAME_OF_YOUR_PROJECT > Administration. Change **Redirect URL** to `http://localhost:8080`. In the file `scripts/login.js` set **projectid** (Identifier from the Builder). Next, go to Administration -> Applications. Create an application, retrieve the  **Client ID** and:
     * in the file `scripts/login.js` set **client_id** and **scopes**.
     * in the file `scripts/post_ajax.js` set **Project ID**.
 2. Run `npm install`
