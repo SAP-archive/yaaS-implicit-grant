@@ -13,9 +13,11 @@ This project is copyrighted by [SAP AG](http://www.sap.com/) and made available 
 In order to use the sample tutorial you need to have an account in the Builder and be able to create applications within a project/site.
 
 ## Getting started
-1. Create a new project in the Builder and subscribe to the Core Package and Commerce as a Service from the Yaas Market. Retrieve the project Identifier (projectid) from: Projects/Sites > NAME_OF_YOUR_PROJECT > Administration. Next, go to Administration > Applications. Create an application with the Core package add Commerce as a Service as required packages. Add "hybris.category_create" from Commerce as a Service ss a required scope. In the next step set the **Redirect URL** to `http://127.0.0.1:8080`. Retrieve the  **Client ID** from the Client Authorization section and:
-    * in the file `scripts/login.js` set **clientid**
-    * in the file `scripts/post_ajax.js` set **projectid**.
+1. Create a new project in the Builder and subscribe to the Core Package and Commerce as a Service from the Yaas Market. Retrieve the project **Identifier** (projectid) from: Projects/Sites > NAME_OF_YOUR_PROJECT > Administration.
+2. Go to Administration > Applications. Create an application with the Core package add Commerce as a Service as required packages. Add "hybris.category_create" from Commerce as a Service ss a required scope. In the next step set the **Redirect URL** to `http://127.0.0.1:8080`. Retrieve the  **Client ID** from the Client Authorization section.
+3. In the tutorial file:
+    * `scripts/login.js` set **clientid**
+    * `scripts/post_ajax.js` set **projectid**.
 2. Run `npm install`.
 3. Run `node server.js`.
 4. Navigate to http://localhost:8080/ in your browser and follow the steps in the displayed page.
