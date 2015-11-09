@@ -21,4 +21,4 @@ In order to use the sample tutorial you need to have an account in the Builder a
 2. Run `npm install`.
 3. Run `node server.js`.
 4. Navigate to http://localhost:8080/ in your browser and follow the steps in the displayed page.
-5. Successful flow should generate an inactive cagetory in your project and return its ID and link.
+5. Successful flow generates an inactive cagetory in your project and returns its ID and link.
