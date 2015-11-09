@@ -17,7 +17,7 @@ $(document).ready(function(){
         var x = JSON.parse(theName);
         console.log(theName);
         jQuery.ajax( {
-            url: 'https://api.yaas.io/hybris/category/b1/<projectid>/categories',
+            url: 'https://api.yaas.io/hybris/category/b1/<projectid>/categories', //replace <projectid> with the Identifier
             type: 'POST',
             data: JSON.stringify(x),
             contentType:"application/json",
