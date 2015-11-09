@@ -18,9 +18,9 @@ In order to use the sample tutorial you need to have an account in the Builder a
 3. In the tutorial file:
     * `scripts/login.js` set **clientid**
     * `scripts/post_ajax.js` set **projectid**.
-    * 
-## Run and see it in action
+
+## Run it and see in action
 1. Run `npm install`.
 2. Run `node server.js`.
 3. Navigate to http://localhost:8080/ in your browser and follow the steps in the displayed page.
-4. The successful flow generates an inactive catetory in your project and returns its ID and link.
+4. The successful flow generates an inactive category in your project and returns its ID and link.
