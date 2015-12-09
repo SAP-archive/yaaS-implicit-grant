@@ -4,7 +4,7 @@
 
 function myFunction() {
 
-    var address = "https://api.yaas.io/hybris/oauth2/b1/";
+    var address = "https://api.yaas.io/hybris/oauth2/v1/";
     var endpoint = "authorize";
     var response_type = "token";
     var client_id = "<clientid>"; // replace <clientid> with Client ID of your application
