@@ -10,7 +10,7 @@ For detailed documentation of OAuth2 authorization flows go to the [OAuth2 RFC](
 This project is copyrighted by [SAP AG](http://www.sap.com/) and made available under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.html). Please also confer to the text files "LICENSE" and "NOTICE" included with the project sources.
 
 ## Prerequisites
-In order to use the sample tutorial you need to have an account in the Builder and be able to create applications within a project/site.
+In order to use the sample tutorial you need to have an account in the Builder and be able to create applications within a project/site. The tutorial works with the Node v0.12.x.
 
 ## Getting started
 1. Create a new project in the Builder. Retrieve the project **Identifier** (projectid) from: Projects/Sites > NAME_OF_YOUR_PROJECT > Administration.
