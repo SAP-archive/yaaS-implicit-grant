@@ -5,7 +5,7 @@
 $(document).ready(function(){
     $("#one_post").click(function(){
         jQuery.ajax( {
-            url: 'https://api.yaas.io/hybris/product/v1/<projectid>/products', //replace <projectid> with the Identifier
+            url: 'https://api.yaas.io/hybris/product/v2/<projectid>/products', //replace <projectid> with the Identifier
             type: 'GET',
             contentType:"application/json",
             beforeSend : function( xhr ) {
