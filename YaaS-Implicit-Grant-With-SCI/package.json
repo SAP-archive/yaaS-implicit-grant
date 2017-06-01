@@ -1,0 +1,14 @@
+{
+  "name": "ImplicitFlowTutorial",
+  "version": "2.0.0",
+  "description": "1. `npm install` 2. `npm start`",
+  "main": "server.js",
+  "scripts": {
+    "start" : "node server.js"
+  },
+  "dependencies": {
+    "connect": "^3.3.4",
+    "serve-static": "^1.9.2"
+  },
+  "devDependencies": {}
+}

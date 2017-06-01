@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Implicit Flow Demo With SAP Cloud Identity</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://accounts.sap.com/ui/resources/javascripts/SAP_IDS.js"></script>
+	<script src="./scripts/oauth-utils.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles/view.min.css">
+</head>
+
+<body>
+	<div class="form-signin">
+		<hr><strong>Step 1 - Login</strong>
+		<hr>
+
+		<a href="/login/sci.html" rel="IDS_Login" class="btn btn-lg btn-warning btn-block signin-btn" id="sciLogin"> Sign In Using SAP Cloud Identity </a>
+		<br/><br/>
+
+		<hr><strong>Issued access token:
+			<hr>
+			<div class="form-control" id="accessToken"></div>
+		
+		<br/><br/>
+
+		<hr><strong>Issued id token:
+			<hr>
+			<textarea class="form-control" id="idToken" rows="10"></textarea>
+		
+		<br/><br/>
+		
+		<hr><strong>Step 2 - What's inside an access token</strong>
+		<hr>
+		<button id="infoBtn" class="btn btn-lg btn-warning btn-block signin-btn" onclick="getTokenInfo()">Token info</button><br/><br/>
+		<div style="color: #f8f8ff"><strong>Response:</strong></div>
+		<textarea id="tokenInfo" class="form-control" rows="7"></textarea>
+
+	</div>
+</body>
+
+</html>

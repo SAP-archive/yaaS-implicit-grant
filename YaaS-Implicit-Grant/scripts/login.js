@@ -9,6 +9,6 @@ function login() {
     var response_type = "token";
     var client_id = "<clientid>"; // replace <clientid> with the Client ID of your client
 
-    window.open(address + endpoint + "?" + "response_type=" + response_type + "&client_id=" + client_id);
+    window.open(address + endpoint + "?" + "response_type=" + response_type + "&client_id=" + client_id + "&hybris_id_provider=yaas");
 
 }
