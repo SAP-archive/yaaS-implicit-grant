@@ -1,3 +1,5 @@
+**Due to the retirement of YaaS, this repository is archived and will no longer be maintained.**
+
 # YaaS tutorials for Implicit Grant Flow
 
 ## Overview
